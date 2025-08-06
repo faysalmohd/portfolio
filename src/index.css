@@ -20,3 +20,13 @@ body {
     font-family: Omnes;
     src: url('./fonts/Omnes\ Black.ttf');
 }
+
+@font-face {
+    font-family: Omnes light;
+    src: url('./fonts/Omnes\ SemiBold.ttf');
+}
+
+@font-face {
+    font-family: Omnes light italic;
+    src: url('./fonts/Omnes\ Light\ Italic.ttf');
+}
