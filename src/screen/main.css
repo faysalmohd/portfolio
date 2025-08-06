@@ -1,5 +1,5 @@
 .mainDiv{
-    height: 100vh;
+    height: 90vh;
     color: white;
     display: flex;
     justify-content: center;
@@ -8,9 +8,10 @@
 }
 
 .mainText{
-    font-size: 15vh;
+    font-size: 9vw;
     text-transform: uppercase;
     font-family: "Lilita One", sans-serif;
+    text-wrap: none;
 }
 
 .mainText2{

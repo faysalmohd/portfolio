@@ -5,17 +5,20 @@ import SplitText from "../components/bounceText";
 export default function MainScreen() {
   return (
     <div className="mainDiv">
-      <SplitText
-        text="faysal mohammed"
-        className="mainText"
-        delay={100}
-        duration={0.6}
-        ease="power3.out"
-        splitType="chars"
-        from={{ opacity: 0, y: 40 }}
-        to={{ opacity: 1, y: 0 }}
-        threshold={0.1}
-      />
+      <div>
+        <SplitText
+          text="faysal mohammed"
+          className="mainText"
+          delay={100}
+          duration={0.6}
+          ease="power3.out"
+          splitType="chars"
+          from={{ opacity: 0, y: 40 }}
+          to={{ opacity: 1, y: 0 }}
+          threshold={0.1}
+        />
+      </div>
+
       <SplitText
         text="Full-stack Developer"
         className="mainText2"

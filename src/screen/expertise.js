@@ -1,31 +1,44 @@
 import "./expertise.css";
 import SplitText from "../components/bounceText";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faReact, faJs, faHtml5, faCss3 } from "@fortawesome/free-brands-svg-icons";
+import {
+  faReact,
+  faJs,
+  faHtml5,
+  faCss3,
+} from "@fortawesome/free-brands-svg-icons";
+import AnimateIn from "../components/animateIn";
 
 export default function Expertise() {
-  const info = [ // remember to import the icon from the fa library
-   {
-    icon: faReact,
-    title: 'React',
-    description: 'nice react'
-   },
-   {
-    icon: faJs,
-    title: 'JavaScript',
-    description: 'nice js'
-   },
-   {
-    icon: faHtml5,
-    title: 'HTML',
-    description: 'nice html'
-   },
-   {
-    icon: faCss3,
-    title: 'CSS',
-    description: 'nice css'
-   }
-  ]
+  const info = [
+    // remember to import the icon from the fa library
+    {
+      icon: faReact,
+      title: "React",
+      description: "nice react",
+    },
+    {
+      icon: faJs,
+      title: "JavaScript",
+      description: "nice js",
+    },
+    {
+      icon: faHtml5,
+      title: "HTML",
+      description: "nice html",
+    },
+    {
+      icon: faCss3,
+      title: "CSS",
+      description:
+        "nice cssnice cssnice cssnice cssnice cssnice cssnice cssnice cssnice cssnice cssnice cssnice css",
+    },
+    {
+      icon: faCss3,
+      title: "CSS",
+      description: "nice css",
+    },
+  ];
 
   const Card = ({ icon, title = null, description = null }) => {
     return (
@@ -56,14 +69,19 @@ export default function Expertise() {
         to={{ opacity: 1, y: 0 }}
         threshold={0.1}
       />
-
-      <div className="card-section">
-        {info.map((ele) => {
-          return(
-            <Card icon={ele.icon} title={ele.title} description={ele.description}></Card>
-          )
-        })}
-      </div>
+      <AnimateIn>
+        <div className="card-section">
+          {info.map((ele) => {
+            return (
+              <Card
+                icon={ele.icon}
+                title={ele.title}
+                description={ele.description}
+              ></Card>
+            );
+          })}
+        </div>
+      </AnimateIn>
     </div>
   );
 }

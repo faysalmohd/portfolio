@@ -1,0 +1,151 @@
+.work {
+    color: white;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    margin: 100px auto;
+}
+
+.workH1 {
+    display: flex;
+    flex-direction: column;
+    font-family: Omnes light;
+    line-height: 1;
+    font-size: 7vw;
+}
+
+.work-description {
+    display: flex;
+    flex-direction: row-reverse;
+    flex: 1;
+}
+
+.work-description-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0.5;
+    font-family: Omnes light italic;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+}
+
+.work-description-illustration {
+    display: flex;
+    flex: 0.5;
+}
+
+@media (max-width: 768px) {
+    .work-description {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .work-description-text {
+        text-align: center;
+    }
+
+    .work-description-illustration {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+}
+.illustration {
+    width: 90%;
+    height: auto;
+    mix-blend-mode: color-dodge;
+}
+
+.work-card-section{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 10px;
+    width: 80vw;
+    margin-top: 20vh;
+}
+
+.work-card{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.623);
+    padding: 35px;
+    border-radius: 10px;
+    transform: translateX(-10px);
+    animation: fadeUp linear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+@media (max-width: 768px) {
+    .card-section {
+        grid-template-columns: 1fr; 
+        justify-content: center; 
+    }
+    .card {
+        width: calc(100% - 70px);
+        margin: 0 auto; 
+    }
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.work-card-image{
+    max-width: 30vh;
+    width: 100%;
+    height: auto;
+    flex: 0.7;
+    object-fit: contain;
+}
+
+.work-card-text{
+    flex: 0.3;
+    width: 100%;
+    line-height: 1.5;
+    margin-top: 10vh;
+}
+
+.work-card-title{
+    font-family: Omnes light;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+}
+
+.work-card-languages{
+    font-family: Omnes light italic;
+    color: gray;
+}
+
+.work-card-year{
+    font-family: Omnes light italic;
+    color: gray;
+}
+
+.view-all-btn {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: Omnes light;
+  transition: all 0.3s ease;
+}
+
+.view-all-btn:hover {
+  background: white;
+  color: black;
+}
