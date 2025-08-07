@@ -3,14 +3,16 @@ import MainScreen from "./screen/main";
 import Expertise from "./screen/expertise";
 import Work from "./screen/work";
 import Professional from "./screen/professional";
+import ContactMe from "./components/contactMe";
 
 function App() {
   return (
     <div className="App">
-        <MainScreen/>
-        <Expertise/>
-        <Work/>
-        <Professional/>
+      <MainScreen />
+      <Expertise />
+      <Work />
+      <Professional />
+      <ContactMe />
     </div>
   );
 }

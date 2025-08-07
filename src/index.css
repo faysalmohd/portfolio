@@ -30,3 +30,8 @@ body {
     font-family: Omnes light italic;
     src: url('./fonts/Omnes\ Light\ Italic.ttf');
 }
+
+@font-face {
+    font-family: Omnes elight;
+    src: url('./fonts/Omnes\ Regular.ttf');
+}

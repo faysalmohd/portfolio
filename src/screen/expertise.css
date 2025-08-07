@@ -1,7 +1,6 @@
 .expertiseDiv {
     min-height: 100vh;
     height: 100%;
-    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,6 +14,7 @@
     margin-bottom: 10vh;
     font-family: Omnes;
     word-spacing: 10px;
+    color: white;
 }
 
 .card-section {
@@ -27,7 +27,7 @@
 .card {
     display: flex;
     flex-direction: column;
-    background-color: black;
+    background-color: rgb(255, 255, 255);
     padding: 35px;
     border-radius: 10px;
     min-width: 30%;
@@ -89,7 +89,7 @@
     font-family: Omnes light;
     width: 15px;
     height: 15px;
-    color: rgba(128, 128, 128, 0.404);
+    color: rgb(179, 179, 179);
 }
 
 .card-bottom-description {
@@ -106,5 +106,5 @@
     font-family: Omnes light;
     width: 15px;
     height: 15px;
-    color: rgba(128, 128, 128, 0.404);
+    color: rgb(179, 179, 179);
 }

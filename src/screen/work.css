@@ -71,13 +71,14 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.623);
+    background-color: rgb(0, 0, 0);
     padding: 35px;
     border-radius: 10px;
     transform: translateX(-10px);
-    animation: fadeUp linear both;
-    animation-timeline: view();
-    animation-range: entry 0% cover 40%;
+}
+
+.work-card:hover{
+    background-color: rgb(17, 17, 17);
 }
 
 @media (max-width: 768px) {
@@ -88,18 +89,6 @@
     .card {
         width: calc(100% - 70px);
         margin: 0 auto; 
-    }
-}
-
-@keyframes fadeUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
     }
 }
 

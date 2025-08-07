@@ -32,12 +32,7 @@ export default function Expertise() {
       title: "CSS",
       description:
         "nice cssnice cssnice cssnice cssnice cssnice cssnice cssnice cssnice cssnice cssnice cssnice css",
-    },
-    {
-      icon: faCss3,
-      title: "CSS",
-      description: "nice css",
-    },
+    }
   ];
 
   const Card = ({ icon, title = null, description = null }) => {
