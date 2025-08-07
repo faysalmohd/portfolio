@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Box, Button, Alert } from "@mui/material";
+import { Box, Alert } from "@mui/material";
 import "./contactMe.css";
 
 export default function ContactMe() {
@@ -57,9 +57,9 @@ export default function ContactMe() {
         placeholder="Message"
         required
       ></input>
-      <Button className="contact-me-send-btn" onClick={handleSubmit}>
+      <button className="contact-me-send-btn" onClick={handleSubmit}>
         Send Message
-      </Button>
+      </button>
 
       {status === "success" && (
         <Alert severity="success">Message sent successfully!</Alert>
