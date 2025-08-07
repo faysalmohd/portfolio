@@ -1,15 +1,10 @@
-import React, { useState } from "react";
-import { Box, TextField, Button, Typography, Alert } from "@mui/material";
+import { useState } from "react";
+import { Box, Button, Alert } from "@mui/material";
 import "./contactMe.css";
 
 export default function ContactMe() {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
   const [status, setStatus] = useState(null); // success | error
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setForm((prev) => ({ ...prev, [name]: value }));
-  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();

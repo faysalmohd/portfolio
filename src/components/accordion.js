@@ -6,7 +6,6 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import LocationPinIcon from "@mui/icons-material/LocationPin";
-import Icon from "@mui/material/Icon";
 
 export default function Accordions({
   header,
