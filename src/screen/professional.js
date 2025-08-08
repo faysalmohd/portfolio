@@ -21,12 +21,15 @@ export default function Professional() {
       <AnimateIn>
         <Accordions
           header={"Web-Developer @ Bjit"}
-          detail={"hjcxjwqhgiujwkecgxuwiegcxiwkeug"}
+          detail={
+            "Developing user interfaces, implementing APIs, and enhancing existing codebases. My role also included debugging and resolving issues to improve overall application stability and performance. "
+          }
           started={"2024"}
           image={bjit}
           ended={"2025"}
           location={"Remote"}
           stack={["JavaScript", "HTML", "CSS"]}
+          role={'Junior Web-Developer'}
         />
       </AnimateIn>
     </div>

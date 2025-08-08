@@ -1,0 +1,42 @@
+.connect{
+    color: white;
+    background-color: black;
+    font-family: Omnes light;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex: 0.5;
+    gap: 5vh;
+}
+
+.heading{
+    font-size: xx-large;
+}
+
+.social-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-link-icon{
+    background-color: white;
+    color: black;
+    height: 30px;
+    width: 30px;
+    padding: 15px;
+}
+
+.social-link-icon:hover{
+    background-color: rgb(70, 70, 70);
+    color: white;
+}
+
+.social-stack{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 15px;
+}

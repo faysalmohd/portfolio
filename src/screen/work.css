@@ -54,7 +54,7 @@
 .illustration {
     width: 90%;
     height: auto;
-    mix-blend-mode: color-dodge;
+    mix-blend-mode: luminosity;
 }
 
 .work-card-section{
@@ -62,7 +62,7 @@
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 10px;
     width: 80vw;
-    margin-top: 20vh;
+    margin-top: 10vh;
 }
 
 .work-card{
@@ -71,14 +71,14 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(0, 0, 0);
+    background-color: white;
     padding: 35px;
-    border-radius: 10px;
-    transform: translateX(-10px);
 }
 
 .work-card:hover{
-    background-color: rgb(17, 17, 17);
+    position: relative;
+    transform: translateY(-7px);
+    transition: ease-in-out 100ms;
 }
 
 @media (max-width: 768px) {
@@ -98,6 +98,7 @@
     height: auto;
     flex: 0.7;
     object-fit: contain;
+    mix-blend-mode: luminosity;
 }
 
 .work-card-text{
@@ -111,6 +112,7 @@
     font-family: Omnes light;
     letter-spacing: 1px;
     word-spacing: 3px;
+    color: black;
 }
 
 .work-card-languages{
@@ -125,13 +127,13 @@
 
 .view-all-btn {
   background: transparent;
-  border: 2px solid white;
+  border: 3px solid white;
   color: white;
   padding: 10px 20px;
-  border-radius: 8px;
   cursor: pointer;
   font-family: Omnes light;
   transition: all 0.3s ease;
+  margin-top: 10px;
 }
 
 .view-all-btn:hover {

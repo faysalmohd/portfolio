@@ -16,6 +16,30 @@ body {
     background-position: 0 0, 10px 10px;
 }
 
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-color: black;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: row;
+    }
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: black;
+    padding: 20px;
+    font-family: Omnes light;
+}
+
 @font-face {
     font-family: Omnes;
     src: url('./fonts/Omnes\ Black.ttf');

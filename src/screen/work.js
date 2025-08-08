@@ -13,6 +13,7 @@ import shoppingApp from "../assets/shoppingApp.png";
 import mockupBarRestaurant from "../assets/mockup-bar-restaurant.jpg";
 import mytodo from "../assets/mytodo.png";
 import Calculator from "../assets/Calculator.webp";
+import plantGallery from '../assets/plantGallery.png'
 import AnimateIn from "../components/animateIn";
 
 export default function Work() {
@@ -20,70 +21,102 @@ export default function Work() {
 
   const projects = [
     {
+      image: plantGallery,
+      title: "plantGallery",
+      languages: "React Native / JavaScript",
+      year: "2025",
+      link: 'https://github.com/faysalmohd/plantGallery'
+    },
+    {
       image: newCashApp,
       title: "Cash App 2",
       languages: "HTML / CSS / JavaScript / Firebase",
       year: "2025",
+      link: 'https://github.com/faysalmohd/cash-app-2'
     },
     {
       image: musicTube,
       title: "musicTube",
       languages: "HTML / CSS / JavaScript / Firebase",
       year: "2025",
+      link: 'https://github.com/faysalmohd/music-app'
+    },
+    {
+      image: musicTube,
+      title: "Album api",
+      languages: " JavaScript / NodeJs / ExpressJs / JWT",
+      year: "2025",
+      link: 'https://github.com/faysalmohd/albumProject'
     },
     {
       image: treeApp,
       title: "Tree App",
       languages: "Kotlin Jetpack Compose",
       year: "2025",
+      link: 'https://github.com/faysalmohd/TreeHouse'
     },
     {
       image: cashApp,
       title: "Cash App",
       languages: "HTML / CSS / JavaScript / Firebase",
       year: "2024",
+      link: 'https://github.com/faysalmohd/cash-app'
     },
     {
       image: shoppingApp,
       title: "Shopping App",
       languages: "React / Redux / JavaScript",
       year: "2024",
+      link: 'https://github.com/faysalmohd/shopping-web-app'
     },
     {
       image: hashtag,
       title: "HashTag",
       languages: "React native / JavaScript",
       year: "2023",
+      link: 'https://github.com/faysalmohd/hashTag'
     },
     {
       image: weatherApp,
       title: "Weather App",
       languages: "React native / JavaScript",
       year: "2023",
+      link: 'https://github.com/faysalmohd/weather-forecast'
     },
     {
       image: mideaBUD,
       title: "mideaBud",
       languages: "HTML / CSS / JavaScript / nodejs / Express / Mongodb",
       year: "2023",
+      link: 'https://github.com/faysalmohd/mideabud-v2.0.0'
     },
     {
       image: mockupBarRestaurant,
       title: "Mockup Bar & Restaurant",
       languages: "HTML / CSS",
       year: "2023",
+      link: ''
     },
     {
       image: mytodo,
       title: "myTodo",
       languages: "HTML / CSS / JavaScript / Mongodb",
       year: "2023",
+      link: 'https://github.com/faysalmohd/todo'
     },
     {
       image: Calculator,
       title: "Calculator",
       languages: "HTML / CSS / JavaScript",
       year: "2023",
+      link: 'https://github.com/faysalmohd/calculator'
+    },
+    {
+      image: Calculator,
+      title: "BAHBAI ",
+      languages: "Python / MySQL",
+      year: "2022",
+      link: 'https://github.com/faysalmohd/bahbai'
     },
   ];
 

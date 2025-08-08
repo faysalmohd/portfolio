@@ -6,6 +6,7 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import LocationPinIcon from "@mui/icons-material/LocationPin";
+import LaptopTwoToneIcon from '@mui/icons-material/LaptopTwoTone';
 
 export default function Accordions({
   header,
@@ -15,6 +16,7 @@ export default function Accordions({
   image,
   location,
   stack,
+  role
 }) {
   const [expanded, setExpanded] = React.useState(false);
 
@@ -79,13 +81,26 @@ export default function Accordions({
               alignItems: "center",
               flexDirection: "row",
               gap: "5px",
-              marginBottom: "20px",
               marginTop: "10px",
             }}
           >
             <LocationPinIcon></LocationPinIcon>
             <p style={{ fontFamily: "Omnes light italic" }}>
               {location || "Unavailable"}
+            </p>
+          </div>
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              flexDirection: "row",
+              gap: "5px",
+              marginBottom: "20px",
+            }}
+          >
+            <LaptopTwoToneIcon style={{height: '20px'}}></LaptopTwoToneIcon>
+            <p style={{ fontFamily: "Omnes light italic" }}>
+              {role || "Unavailable"}
             </p>
           </div>
           {detail}

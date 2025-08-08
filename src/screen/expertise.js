@@ -6,22 +6,21 @@ import {
   faJs,
   faHtml5,
   faCss3,
+  faKaggle,
+  faPython,
+  faNodeJs,
+  faNode,
+  faLinux,
+  faGithub,
 } from "@fortawesome/free-brands-svg-icons";
+import { faCloud, faDatabase } from "@fortawesome/free-solid-svg-icons";
+
 import AnimateIn from "../components/animateIn";
 
 export default function Expertise() {
   const info = [
     // remember to import the icon from the fa library
-    {
-      icon: faReact,
-      title: "React",
-      description: "nice react",
-    },
-    {
-      icon: faJs,
-      title: "JavaScript",
-      description: "nice js",
-    },
+
     {
       icon: faHtml5,
       title: "HTML",
@@ -32,7 +31,89 @@ export default function Expertise() {
       title: "CSS",
       description:
         "nice cssnice cssnice cssnice cssnice cssnice cssnice cssnice cssnice cssnice cssnice cssnice css",
-    }
+    },
+    {
+      icon: faJs,
+      title: "JavaScript",
+      description: "nice js",
+    },
+    {
+      icon: faReact,
+      title: "React",
+      description: "nice react",
+    },
+    {
+      icon: faReact,
+      title: "React Native",
+      description:
+        "nice cssnice cssnice cssnice cssnice cssnice cssnice cssnice cssnice cssnice cssnice cssnice css",
+    },
+    {
+      icon: faKaggle,
+      title: "Kotlin",
+      description:
+        "nice cssnice cssnice cssnice cssnice cssnice cssnice cssnice cssnice cssnice cssnice cssnice css",
+    },
+    {
+      icon: faPython,
+      title: "Python",
+      description:
+        "nice cssnice cssnice cssnice cssnice cssnice cssnice cssnice cssnice cssnice cssnice cssnice css",
+    },
+    {
+      icon: faNode,
+      title: "NodeJs",
+      description:
+        "nice cssnice cssnice cssnice cssnice cssnice cssnice cssnice cssnice cssnice cssnice cssnice css",
+    },
+    {
+      icon: faNodeJs,
+      title: "ExpressJs",
+      description:
+        "nice cssnice cssnice cssnice cssnice cssnice cssnice cssnice cssnice cssnice cssnice cssnice css",
+    },
+    {
+      icon: faDatabase,
+      title: "MySQL",
+      description:
+        "nice cssnice cssnice cssnice cssnice cssnice cssnice cssnice cssnice cssnice cssnice cssnice css",
+    },
+    {
+      icon: faDatabase,
+      title: "Mongodb",
+      description:
+        "nice cssnice cssnice cssnice cssnice cssnice cssnice cssnice cssnice cssnice cssnice cssnice css",
+    },
+    {
+      icon: faDatabase,
+      title: "Firebase",
+      description:
+        "nice cssnice cssnice cssnice cssnice cssnice cssnice cssnice cssnice cssnice cssnice cssnice css",
+    },
+    {
+      icon: faLinux,
+      title: "Linux",
+      description:
+        "nice cssnice cssnice cssnice cssnice cssnice cssnice cssnice cssnice cssnice cssnice cssnice css",
+    },
+    {
+      icon: faCloud,
+      title: "REST api",
+      description:
+        "nice cssnice cssnice cssnice cssnice cssnice cssnice cssnice cssnice cssnice cssnice cssnice css",
+    },
+    {
+      icon: faCloud,
+      title: "Postman",
+      description:
+        "nice cssnice cssnice cssnice cssnice cssnice cssnice cssnice cssnice cssnice cssnice cssnice css",
+    },
+    {
+      icon: faGithub,
+      title: "Github",
+      description:
+        "nice cssnice cssnice cssnice cssnice cssnice cssnice cssnice cssnice cssnice cssnice cssnice css",
+    },
   ];
 
   const Card = ({ icon, title = null, description = null }) => {
