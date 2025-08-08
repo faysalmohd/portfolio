@@ -16,105 +16,109 @@ import {
 import { faCloud, faDatabase } from "@fortawesome/free-solid-svg-icons";
 
 import AnimateIn from "../components/animateIn";
+import { useState } from "react";
 
 export default function Expertise() {
   const info = [
-    // remember to import the icon from the fa library
-
+    // remember to import the icon for using in the card
     {
       icon: faHtml5,
       title: "HTML",
-      description: "nice html",
+      description:
+        "Built structured, semantic layouts for portfolio web pages and projects.",
     },
     {
       icon: faCss3,
       title: "CSS",
       description:
-        "nice cssnice cssnice cssnice cssnice cssnice cssnice cssnice cssnice cssnice cssnice cssnice css",
+        "Crafted responsive designs and animations for modern user-facing components.",
     },
     {
       icon: faJs,
       title: "JavaScript",
-      description: "nice js",
+      description:
+        "Enabled dynamic interactions and UI behaviors in web projects.",
     },
     {
       icon: faReact,
       title: "React",
-      description: "nice react",
+      description:
+        "Designed modular, component-based applications for web dashboards and interfaces.",
     },
     {
       icon: faReact,
       title: "React Native",
       description:
-        "nice cssnice cssnice cssnice cssnice cssnice cssnice cssnice cssnice cssnice cssnice cssnice css",
+        "Developed mobile-first applications like plantGallery and musicTube.",
     },
     {
       icon: faKaggle,
       title: "Kotlin",
       description:
-        "nice cssnice cssnice cssnice cssnice cssnice cssnice cssnice cssnice cssnice cssnice cssnice css",
+        "Built native Android UIs using Jetpack Compose for intuitive UX.",
     },
     {
       icon: faPython,
       title: "Python",
       description:
-        "nice cssnice cssnice cssnice cssnice cssnice cssnice cssnice cssnice cssnice cssnice cssnice css",
+        "Automated backend logic and data processing in various prototypes.",
     },
     {
       icon: faNode,
-      title: "NodeJs",
+      title: "Node.js",
       description:
-        "nice cssnice cssnice cssnice cssnice cssnice cssnice cssnice cssnice cssnice cssnice cssnice css",
+        "Powering APIs and backend logic for apps such as albumProject.",
     },
     {
       icon: faNodeJs,
-      title: "ExpressJs",
+      title: "Express.js",
       description:
-        "nice cssnice cssnice cssnice cssnice cssnice cssnice cssnice cssnice cssnice cssnice cssnice css",
+        "Structured RESTful API endpoints and routing for Node.js services.",
     },
     {
       icon: faDatabase,
       title: "MySQL",
-      description:
-        "nice cssnice cssnice cssnice cssnice cssnice cssnice cssnice cssnice cssnice cssnice cssnice css",
+      description: "Managed relational data schemas in backend applications.",
     },
     {
       icon: faDatabase,
-      title: "Mongodb",
+      title: "MongoDB",
       description:
-        "nice cssnice cssnice cssnice cssnice cssnice cssnice cssnice cssnice cssnice cssnice cssnice css",
+        "Stored application data in flexible document schemas for runtime efficiency.",
     },
     {
       icon: faDatabase,
       title: "Firebase",
       description:
-        "nice cssnice cssnice cssnice cssnice cssnice cssnice cssnice cssnice cssnice cssnice cssnice css",
+        "Handled real-time data and authentication in client-focused apps.",
     },
     {
       icon: faLinux,
       title: "Linux",
-      description:
-        "nice cssnice cssnice cssnice cssnice cssnice cssnice cssnice cssnice cssnice cssnice cssnice css",
+      description: "Automated process using Linux environments via terminal.",
     },
     {
       icon: faCloud,
-      title: "REST api",
+      title: "REST API",
       description:
-        "nice cssnice cssnice cssnice cssnice cssnice cssnice cssnice cssnice cssnice cssnice cssnice css",
+        "Designed client-server communication interfaces for web & mobile apps.",
     },
     {
       icon: faCloud,
       title: "Postman",
       description:
-        "nice cssnice cssnice cssnice cssnice cssnice cssnice cssnice cssnice cssnice cssnice cssnice css",
+        "Streamlined API debugging and validation using Postman toolsets.",
     },
     {
       icon: faGithub,
-      title: "Github",
+      title: "GitHub",
       description:
-        "nice cssnice cssnice cssnice cssnice cssnice cssnice cssnice cssnice cssnice cssnice cssnice css",
+        "Showcased project repositories, documentation, and collaborative workflow.",
     },
   ];
+
+  const initialVisibleCount = 3; // Number of cards to show initially
+  const [visibleCount, setVisibleCount] = useState(initialVisibleCount);
 
   const Card = ({ icon, title = null, description = null }) => {
     return (
@@ -147,15 +151,35 @@ export default function Expertise() {
       />
       <AnimateIn>
         <div className="card-section">
-          {info.map((ele) => {
+          {info.slice(0, visibleCount).map((ele, idx) => {
             return (
               <Card
+                key={idx}
                 icon={ele.icon}
                 title={ele.title}
                 description={ele.description}
-              ></Card>
+              />
             );
           })}
+        </div>
+
+        {/* Buttons Section */}
+        <div className="view-all-card-section-div">
+          {visibleCount < info.length ? (
+            <button
+              className="view-all-card-section-btn"
+              onClick={() => setVisibleCount(info.length)}
+            >
+              View All
+            </button>
+          ) : visibleCount > initialVisibleCount ? (
+            <button
+              className="view-all-card-section-btn"
+              onClick={() => setVisibleCount(initialVisibleCount)}
+            >
+              View Less
+            </button>
+          ) : null}
         </div>
       </AnimateIn>
     </div>

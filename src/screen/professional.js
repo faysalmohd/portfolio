@@ -20,7 +20,7 @@ export default function Professional() {
       />
       <AnimateIn>
         <Accordions
-          header={"Web-Developer @ Bjit"}
+          header={"Bjit"}
           detail={
             "Developing user interfaces, implementing APIs, and enhancing existing codebases. My role also included debugging and resolving issues to improve overall application stability and performance. "
           }

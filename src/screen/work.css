@@ -73,6 +73,11 @@
     align-items: center;
     background-color: white;
     padding: 35px;
+    text-decoration: none;
+}
+
+.work-card:active, .work-card:visited{
+    text-decoration: none;
 }
 
 .work-card:hover{
@@ -99,6 +104,15 @@
     flex: 0.7;
     object-fit: contain;
     mix-blend-mode: luminosity;
+}
+
+.work-card-no-image{
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    font-family: Omnes;
 }
 
 .work-card-text{
@@ -134,6 +148,7 @@
   font-family: Omnes light;
   transition: all 0.3s ease;
   margin-top: 10px;
+  font-size: medium;
 }
 
 .view-all-btn:hover {

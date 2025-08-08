@@ -39,12 +39,12 @@ export default function Accordions({
             display: "flex",
             justifyContent: "space-between",
             alignItems: "center",
-            width: "73vw",
+            width: "70vw",
           }}
         >
           <Typography
             style={{
-              fontFamily: "Omnes",
+              fontFamily: "Omnes"
             }}
             variant="h6"
           >

@@ -91,3 +91,28 @@
     height: 15px;
     color: rgb(179, 179, 179);
 }
+
+.view-all-card-section-div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.view-all-card-section-btn{
+  background: transparent;
+  border: 3px solid white;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-family: Omnes light;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+  font-size: medium;
+}
+
+.view-all-card-section-btn:hover {
+  background: white;
+  color: black;
+}
