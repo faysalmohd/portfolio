@@ -47,9 +47,21 @@ export default function Expertise() {
     },
     {
       icon: faReact,
+      title: "Next.jS",
+      description:
+        "Built server-side rendered and statically generated web applications for improved performance and SEO.",
+    },
+    {
+      icon: faReact,
       title: "React Native",
       description:
         "Developed mobile-first applications like plantGallery and musicTube.",
+    },
+    {
+      icon: faCss3,
+      title: "Tailwind CSS",
+      description:
+        "Designed fast, responsive interfaces using utility-first styling and reusable UI patterns.",
     },
     {
       icon: faKaggle,

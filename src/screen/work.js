@@ -15,11 +15,19 @@ import mytodo from "../assets/mytodo.png";
 import Calculator from "../assets/Calculator.webp";
 import plantGallery from "../assets/plantGallery.png";
 import AnimateIn from "../components/animateIn";
+import Dashboard from "../assets/dashboard.jpg";
 
 export default function Work() {
   const [showAll, setShowAll] = useState(false);
 
   const projects = [
+    {
+      image: Dashboard,
+      title: "Dashboard",
+      languages: "Next.js / JavaScript / TailwindCss",
+      year: "2026",
+      link: "https://github.com/faysalmohd/analytic-dashboard",
+    },
     {
       image: plantGallery,
       title: "plantGallery",
