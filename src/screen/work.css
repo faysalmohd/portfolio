@@ -59,7 +59,7 @@
 
 .work-card-section{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
     gap: 10px;
     width: 80vw;
     margin-top: 10vh;
