@@ -22,6 +22,12 @@ export default function Work() {
 
   const projects = [
     {
+      title: "Docker Todo",
+      languages: "HTML / CSS / JavaScript / Node.js ",
+      year: "2026",
+      link: "https://github.com/faysalmohd/todo-docker-project",
+    },
+    {
       image: Dashboard,
       title: "Dashboard",
       languages: "Next.js / JavaScript / TailwindCss",

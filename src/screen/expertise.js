@@ -106,6 +106,12 @@ export default function Expertise() {
         "Designed flexible and efficient APIs using GraphQL for precise data fetching and reduced over-fetching.",
     },
     {
+      iconClass: "devicon-docker-plain",
+      title: "Docker",
+      description:
+        "Containerized Node.js & Express apps for consistent deployment using Docker and Docker Compose.",
+    },
+    {
       iconClass: "devicon-googlecloud-plain",
       title: "REST API",
       description:
